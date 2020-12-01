@@ -6,9 +6,8 @@ number_1 = 0
 number_2 = 0
 for i in range(len(int_data)):
     for j in range(i+1,len(int_data)):
-        for z in range(i+1,j+1,len(int_data)):
-            if int_data[i]+int_data[j] == 2020:
-                number_1=int_data[i]
-                number_2=int_data[j]
+        if int_data[i]+int_data[j] == 2020:
+            number_1=int_data[i]
+            number_2=int_data[j]
 product = number_1 * number_2
 print('the two entries that sum to 2020 are',number_1,number_2,'and the product of these numbers are:',product)
