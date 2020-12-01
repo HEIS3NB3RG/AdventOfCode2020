@@ -2,8 +2,7 @@ from csv import reader
 read_file = open('numbers')
 str_data = list(read_file)
 int_data = [int(x) for x in str_data]
-number_1 = 0
-number_2 = 0
+number_1, number_2 = 0, 0
 for i in range(len(int_data)):
     for j in range(i+1,len(int_data)):
         if int_data[i]+int_data[j] == 2020:
